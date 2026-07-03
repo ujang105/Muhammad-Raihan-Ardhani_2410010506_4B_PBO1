@@ -1,13 +1,30 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package rentaloutdoorcamping;
 
-/**
- *
- * @author LENOVO
- */
-public class Tenda {
-    
+public class Tenda extends Peralatan {
+
+    private int kapasitas;
+
+    public Tenda(String id, String nama, String kategori,
+            double hargaSewa, int stok,
+            String kondisi, String status,
+            int kapasitas) {
+
+        super(id, nama, kategori, hargaSewa, stok, kondisi, status);
+        this.kapasitas = kapasitas;
+    }
+
+    public int getKapasitas() {
+        return kapasitas;
+    }
+
+    public void setKapasitas(int kapasitas) {
+        this.kapasitas = kapasitas;
+    }
+
+    @Override
+    public void tampilData() {
+        super.tampilData();
+        System.out.println("Kapasitas      : " + kapasitas + " Orang");
+    }
+
 }
