@@ -28,7 +28,7 @@ public Peralatan(String id,String nama,String kategori,double hargaSewa,int stok
     
 }
 
-public String getid(){
+public String getId(){
     return id;
 }
 
@@ -104,7 +104,7 @@ public void tampilanData(){
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 
-    Object getId() {
+    Object getid() {
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 

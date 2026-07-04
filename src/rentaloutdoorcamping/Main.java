@@ -37,8 +37,7 @@ public class Main {
 
                 switch (pilihan) {
 
-                    case 1:
-
+                    case 1 -> {
                         System.out.println("\n=== Tambah Peralatan ===");
 
                         System.out.print("ID             : ");
@@ -70,54 +69,23 @@ public class Main {
                                 "Tersedia");
 
                         rental.tambahPeralatan(p);
+                    }
 
-                        break;
+                    case 2 -> rental.tampilPeralatan();
 
-                    case 2:
+                    case 3 -> rental.cariPeralatan();
 
-                        rental.tampilPeralatan();
+                    case 4 -> rental.editPeralatan();
 
-                        break;
+                    case 5 -> rental.hapusPeralatan();
 
-                    case 3:
+                    case 6 -> rental.sewaPeralatan();
 
-                        rental.cariPeralatan();
+                    case 7 -> rental.kembalikanPeralatan();
 
-                        break;
+                    case 8 -> System.out.println("\nTerima kasih telah menggunakan program.");
 
-                    case 4:
-
-                        rental.editPeralatan();
-
-                        break;
-
-                    case 5:
-
-                        rental.hapusPeralatan();
-
-                        break;
-
-                    case 6:
-
-                        rental.sewaPeralatan();
-
-                        break;
-
-                    case 7:
-
-                        rental.kembalikanPeralatan();
-
-                        break;
-
-                    case 8:
-
-                        System.out.println("\nTerima kasih telah menggunakan program.");
-
-                        break;
-
-                    default:
-
-                        System.out.println("Menu tidak tersedia.");
+                    default -> System.out.println("Menu tidak tersedia.");
 
                 }
 

@@ -37,7 +37,7 @@ public class Rental {
 
         for (Peralatan p : daftarPeralatan) {
 
-            if (p.getid().equalsIgnoreCase(id)) {
+            if (p.getId().equalsIgnoreCase(id)) {
 
                 p.tampilData();
                 ketemu = true;
@@ -60,7 +60,7 @@ public class Rental {
 
         for (Peralatan p : daftarPeralatan) {
 
-            if (p.getid().equalsIgnoreCase(id)) {
+            if (p.getId().equalsIgnoreCase(id)) {
 
                 System.out.print("Nama Baru : ");
                 p.setNama(input.nextLine());
@@ -97,7 +97,7 @@ public class Rental {
 
         for (Peralatan p : daftarPeralatan) {
 
-            if (!p.getid().equalsIgnoreCase(id)) {
+            if (!p.getId().equalsIgnoreCase(id)) {
             } else {
                 daftarPeralatan.remove(p);
 
@@ -119,7 +119,7 @@ public class Rental {
 
         for (Peralatan p : daftarPeralatan) {
 
-            if (p.getid().equalsIgnoreCase(id)) {
+            if (p.getId().equalsIgnoreCase(id)) {
 
                 if (p.getStok() > 0) {
 
@@ -165,7 +165,7 @@ public class Rental {
 
         for (Peralatan p : daftarPeralatan) {
 
-            if (p.getid().equalsIgnoreCase(id)) {
+            if (p.getId().equalsIgnoreCase(id)) {
 
                 p.setStok(p.getStok() + 1);
 
